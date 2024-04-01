@@ -1,0 +1,68 @@
+.SearchBar-Container{
+border-bottom: solid 1px lightgray;
+}
+
+.Input{
+    width: 90%;
+    padding: 10px 14px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.SearchBar-Icon{
+    position: fixed;
+    top: 18%;
+    right: 6%;
+}
+
+.SearchBar-Link-Container{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    p{
+        margin: 0;
+    }
+    .Red-Color{
+        color: red;
+    }
+    .SearchBar-Link-Container{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px 5px 40px ;
+        font-size: small;
+        font-weight: 500;
+    }
+    .SearchBar-Left-Link-Container{
+        width: 26%;
+    }
+    .SearchBar-Right-Link-Container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 64%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+ .SearchBar-Container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+ }
+ .SearchBar-Link-Container{
+
+    width: 75%;
+}
+
+.Input{
+    width: 90%;
+    box-sizing: border-box;
+
+}
+
+.Input-Container{
+    padding-right: 40px;
+}
+}
