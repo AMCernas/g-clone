@@ -1,0 +1,200 @@
+.BookInfo-Container{
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+
+.Page-main{
+    flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    width: 90%;
+    display: block;
+}
+
+.Columns{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.Column{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    max-height: auto;
+    margin: 10px 0;
+}
+
+.BookInfo-Inner-Container-One{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BookInfo-Inner-Container-One p{
+    margin: 1px;
+}
+
+h5{
+    margin: 15px 0;
+}
+
+.Favorite, .Share{
+    display: none;
+}
+
+.Details-Price-Container{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.Details-Price-Container-One p, h6{
+    margin: 0;
+}
+
+.BookInfo-Inner-Container-Three{
+    background-color: rgb(248, 248, 248);
+    padding: 10px;
+
+}
+
+.Price{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.Quantity-Container{
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-weight: 500;
+    }
+}
+
+.Quantity-Selector{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Quantity-Selector p{
+    margin: 0 10px;
+}
+
+.Button{
+    width: 100%;
+    background-color: rgb(45, 42, 42);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.Delivery-Container{
+    text-align: left;
+    margin: 20px 0;
+    padding-bottom: 25px;
+    border-bottom: solid 1px lightgray;
+}
+
+.Delivery-Container p{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.Delivery-Container p:nth-child(even){
+    color: green;
+}
+
+.Delivery-Store-Container{
+    text-align: left;
+    border-bottom: solid 1px lightgray;
+}
+
+.Delivery-Store-Container p:first-child{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.Delivery-Store-Container p:last-child{
+    margin-bottom: 15px ;
+    font-weight: 600;
+}
+
+.Delivery-Store-Container-Available{
+    text-align: left;
+    font-weight: 600;
+    margin: 15px 0;
+
+}
+
+@media screen and (min-width: 768px) {
+    .BookInfo-Container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        flex-direction: unset;
+    }
+
+    .BookInfo-Inner-Container-One{
+        padding-right: 30px;
+        flex-grow: 1;
+        order: 2;
+        width: 20%;
+    }
+
+    .BookInfo-Inner-Container-Two{
+        order: 1;
+        max-width: 25%;
+        padding-right: 30px;
+    }
+
+    .BookInfo-Inner-Container-Three{
+        max-width: 316px;
+        float: right;
+        min-width: 270px;
+        width: 39%;
+        order: 3;
+    }
+
+    .Favorite, .Share{
+        display:block;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    
+    .BookInfo-Inner-Container-One p, h5{
+        display: flex;
+    }
+
+    .BookInfo-Inner-Container-One h5{
+        margin: 10px 0 15px 0;
+    }
+
+    .Quantity-Container{
+        margin: 15px 0;
+    }
+}
