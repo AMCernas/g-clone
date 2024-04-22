@@ -1,0 +1,147 @@
+.BookDetails-Container{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+    flex-direction: column;
+    margin-top: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    clear: both;
+}
+
+.Dropdown-Details-Container-One{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 0px;
+    margin: auto;
+    padding: 0px 20px;
+    list-style: none none;
+    font-size: smaller;
+    border-bottom: solid 1px lightgray;
+
+}
+.Dropdown-Details-Container-Two{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    position: relative;
+    z-index: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 20px;
+    font-size:smaller;
+}
+
+
+.Dropdown-Details-Container-One p, .Dropdown-Details-Container-Two p{
+    text-align: justify;
+}
+
+.Button-Details-Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Dropdown-Details{
+    margin: 10px 0;
+    width: 100%;
+    border: none;
+    background-color: white;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.Details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Author-Container{
+    padding: 30px 20px;
+    max-width: 1000px;
+    width: 90%;
+    display: block;
+    background: rgb(244, 244, 244);
+    margin: 60px auto;
+}
+
+.Author-Container h5{
+    justify-content: center;
+}
+
+.Author-Container p{
+    text-align: justify;
+}
+
+.Author-Name{
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .BookDetails-Container{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0px;
+        clear: both;
+        margin-top: 20px;
+        flex-direction: row;
+    }
+
+    .Dropdown-Details-Container-One{
+        width: 45%;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        position: relative;
+        z-index: 1;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-bottom: 0px;
+        margin: 0px;
+        list-style: none none;
+        font-size:medium;
+
+    }
+
+    .Dropdown-Details-Container-Two{
+        max-width: 346px;
+        min-width: 346px;
+        padding-left: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        position: relative;
+        z-index: 1;
+        margin-left: 30px;
+        margin-right: 0px;
+        border-bottom: 0px;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 30px;
+        list-style: none none;
+        justify-content: space-evenly;
+        font-size:medium;
+    }
+    .Dropdown-Details-Container-Two p{
+        margin: 5px 0;
+
+    }
+    
+}

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from './components/NavBar';
 import { SearchBar } from './components/SearchBar';
 import { BookInfo } from './components/BookInfo';
-
+import { BookDetails } from './components/BookDetails';
 function App() {
   return (
     <div className="App">
@@ -12,6 +12,7 @@ function App() {
       <NavBar/>
       <SearchBar/>
       <BookInfo/>
+      <BookDetails/>
     </div>
   );
 }

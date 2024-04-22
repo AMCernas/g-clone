@@ -13,6 +13,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { CiCalendar } from "react-icons/ci";
 import { LiaQuestionSolid } from "react-icons/lia";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
+import { CiHeart } from "react-icons/ci";
 
 
 
@@ -25,35 +26,28 @@ function NavBar() {
     return (
         <div>
             <div className="NavBar-Container">
-
-            <div className="NavBar-Left-Container">
-                <div className="NavBar-Icon-Left">
-                    <IoLocationOutline />
-                    <span>Librerias</span>
-                </div>
-                <div className="NavBar-Icon-Left">
-                    <CiCalendar />
-                    <span>Eventos</span>
-                </div>
-                <div className="NavBar-Icon-Left">
-                    <LiaQuestionSolid />
-                    <span>Ayuda</span>
-                </div>
-                <div className="NavBar-Icon-Left">
-                    <HiOutlineSpeakerphone />
-                    <span>Publicidad</span>
-                </div>
-            </div>
+            <div className="Modal-Icon-Outer-Container">
             <div className="Modal-Icon-Container">
                 <MdOutlineStorage onClick={handleShow} size={25} className="Modal-Icon"/>
             </div>
             <img className="Logo"  src={logo}></img>
+
+            </div>
             <div className="NavBar-Right-Container">
-                <div>
-                <FiUser size={20} className="NavBar-Right-Icon"/><span className="NavBar-Right-Text">Iniciar Sesión</span>
+                <div className="Help-Icon" >
+                    <LiaQuestionSolid size={20} className="NavBar-Right-Icon"/><span className="NavBar-Right-Text">Ayuda</span>
                 </div>
-                <div>
-                <BsCartDash size={20} className="NavBar-Right-Icon"/><span className="NavBar-Right-Text">Bolsa</span>
+                <div className="Right-Icon-Container" >
+                    <IoLocationOutline size={20} className="NavBar-Right-Icon"/><span className="NavBar-Right-Text">Librerias</span>
+                </div>
+                <div className="Right-Icon-Container">
+                    <FiUser size={20} className="NavBar-Right-Icon"/><span className="NavBar-Right-Text">Iniciar Sesión</span>
+                </div>
+                <div className="Right-Icon-Container">
+                    <CiHeart size={22} className="NavBar-Right-Icon"/><span className="NavBar-Right-Text">Favoritos</span>
+                </div>
+                <div className="Right-Icon-Container">
+                    <BsCartDash size={20} className="NavBar-Right-Icon"/><span className="NavBar-Right-Text">Bolsa</span>
                 </div>
             </div>
             </div>
